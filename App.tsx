@@ -1,12 +1,10 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import AppNavigator from './src/AppNavigator';
 
-function App(): React.JSX.Element {
+const App = () => {
   return (
-    <View>
-      <Text> Splash </Text>
-    </View>
+    <AppNavigator/>
   );
-}
+};
 
 export default App;
