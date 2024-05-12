@@ -19,20 +19,20 @@ const Login = () => {
         <Text className="text-xl font-medium text-white mt-10">
           Welcome Back, Login
         </Text>
-        <View className="flex flex-row items-center bg-slate-200 rounded-xl mt-10 w-9/12">
+        <View className="flex flex-row items-center bg-slate-200 rounded-xl mt-10 w-10/12">
           <Image
             source={require("../images/mail.png")}
-            className="h-[30px] w-[30px] absolute ml-3"
+            className="h-[28px] w-[28px] absolute ml-3"
           />
           <TextInput
             placeholder="Enter Email Id"
             className="h-10 pl-[54px] bg-transparent w-full"
           />
         </View>
-        <View className="flex flex-row items-center bg-slate-200 rounded-xl mt-4 w-9/12">
+        <View className="flex flex-row items-center bg-slate-200 rounded-xl mt-4 w-10/12">
           <Image
             source={require("../images/lock.png")}
-            className="h-[30px] w-[30px] absolute ml-3"
+            className="h-[28px] w-[28px] absolute ml-3"
           />
           <TextInput
             placeholder="Enter Password"
@@ -40,13 +40,13 @@ const Login = () => {
             secureTextEntry={true}
           />
         </View>
-        <Pressable className="p-4 bg-[#6ee9ef] h-12 w-9/12 mt-14 rounded-xl">
-          <Text className="text-[#032457] h-10 text-center font-semibold">
+        <Pressable className="p-2 bg-[#032457] h-12 w-10/12 mt-14 rounded-xl">
+          <Text className="text-white h-10 text-center font-semibold text-lg">
             Login
           </Text>
         </Pressable>
         <Text
-          className="mt-4 text-lg text-[#032457] font-medium"
+          className="mt-4 text-sm text-[#032457] font-medium"
           onPress={() => {
             navigation.navigate('Signup' as never);
           }}
